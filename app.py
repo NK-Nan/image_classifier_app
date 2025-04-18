@@ -6,6 +6,9 @@ Created on Sat Apr 19 00:30:43 2025
 """
 
 import streamlit as st
+import tensorflow as tf
+from tensorflow.keras.applications.mobilenet_v2 import MobileNetV2, decode_predictions, preprocess_input
+from tensorflow.keras.preprocessing import image
 import numpy as np
 from PIL import Image
 import pickle
